@@ -5,7 +5,7 @@ ENV PYTHONUNBUFFERED 1
 # Устанавливает рабочий каталог контейнера — "app"
 WORKDIR /web_miet
 # Копирует все файлы из нашего локального проекта в контейнер
-ADD ../ ./
+ADD ./ ./
 COPY requirements.txt /tmp/requirements.txt
 # Запускает команду pip install для всех библиотек, перечисленных в requirements.txt
 EXPOSE 8000
